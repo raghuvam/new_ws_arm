@@ -1,0 +1,8 @@
+prefix=/home/x0221391/ws_arm/devel_isolated/cam_capture_old
+
+Name: cam_capture_old
+Description: Description of cam_capture_old
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/x0221391/ws_arm/devel_isolated/cam_capture_old/lib 
+Requires: 

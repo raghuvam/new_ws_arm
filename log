@@ -1,0 +1,76 @@
+/usr/bin/cmake -H/home/x0221391/ws_arm/src/cam_streamer -B/home/x0221391/ws_arm/build_isolated/cam_streamer --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/x0221391/ws_arm/build_isolated/cam_streamer/CMakeFiles /home/x0221391/ws_arm/build_isolated/cam_streamer/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+make -f CMakeFiles/streamerlink.dir/build.make CMakeFiles/streamerlink.dir/depend
+make[2]: Entering directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+cd /home/x0221391/ws_arm/build_isolated/cam_streamer && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/x0221391/ws_arm/src/cam_streamer /home/x0221391/ws_arm/src/cam_streamer /home/x0221391/ws_arm/build_isolated/cam_streamer /home/x0221391/ws_arm/build_isolated/cam_streamer /home/x0221391/ws_arm/build_isolated/cam_streamer/CMakeFiles/streamerlink.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+make -f CMakeFiles/streamerlink.dir/build.make CMakeFiles/streamerlink.dir/build
+make[2]: Entering directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+make[2]: Nothing to be done for `CMakeFiles/streamerlink.dir/build'.
+make[2]: Leaving directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+/usr/bin/cmake -E cmake_progress_report /home/x0221391/ws_arm/build_isolated/cam_streamer/CMakeFiles  5
+[ 50%] Built target streamerlink
+make -f CMakeFiles/cam_streamer.dir/build.make CMakeFiles/cam_streamer.dir/depend
+make[2]: Entering directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+cd /home/x0221391/ws_arm/build_isolated/cam_streamer && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/x0221391/ws_arm/src/cam_streamer /home/x0221391/ws_arm/src/cam_streamer /home/x0221391/ws_arm/build_isolated/cam_streamer /home/x0221391/ws_arm/build_isolated/cam_streamer /home/x0221391/ws_arm/build_isolated/cam_streamer/CMakeFiles/cam_streamer.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+make -f CMakeFiles/cam_streamer.dir/build.make CMakeFiles/cam_streamer.dir/build
+make[2]: Entering directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+/usr/bin/cmake -E cmake_progress_report /home/x0221391/ws_arm/build_isolated/cam_streamer/CMakeFiles 1
+make[2]: *** No rule to make target `/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/lib/libopencv_videostab.so.2.4.9', needed by `/home/x0221391/ws_arm/devel_isolated/cam_streamer/lib/cam_streamer/cam_streamer'.  Stop.
+make[2]: *** Waiting for unfinished jobs....
+[100%] Building CXX object CMakeFiles/cam_streamer.dir/src/cam_capture.cpp.o
+/usr/bin/arm-linux-gnueabihf-g++-4.6   -DROS_PACKAGE_NAME=\"cam_streamer\" -DROSCONSOLE_BACKEND_LOG4CXX -Wno-unused-variable -Wno-unused-parameter -DTDA2XX_BUILD -DTDA2XX_FAMILY_BUILD -DPLATFORM_EVM_SI -DTDA2XX_1024MB_DDR -DUTILS_ASSERT_ENABLE -DFVID2_BACKWARD_COMPATIBLE -DUSE_STD_ASSERT -DTRACE_ENABLE -DASSERT_ENABLE -D_DRA7xx -D_SC_VER_1_16 -D__sysbios__ -DPROC_IPU1_0_INCLUDE -DTDA2XX_BUILD -DTDA2XX_FAMILY_BUILD -DPLATFORM_EVM_SI -DTDA2XX_1024MB_DDR -DUTILS_ASSERT_ENABLE -DFVID2_BACKWARD_COMPATIBLE -DUSE_STD_ASSERT -DTRACE_ENABLE -DASSERT_ENABLE -D_DRA7xx -D_SC_VER_1_16 -D__sysbios__ -DPROC_IPU1_0_INCLUDE -DPROC_DSP1_INCLUDE -DPROC_DSP2_INCLUDE -DA15_TARGET_OS_LINUX -DLINUX_BUILD -DPROC_IPU1_0_INCLUDE -DPROC_DSP1_INCLUDE -DPROC_DSP2_INCLUDE -DPROC_A15_0_INCLUDE -DA15_TARGET_OS_LINUX -DLINUX_BUILD -DPROC_IPU1_0_INCLUDE -DPROC_A15_0_INCLUDE -Wall -Warray-bounds -O3 -I/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/linux/src/osa/include -I/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include -I/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv -I/home/x0221391/cardimage_copy/rootfs/usr/share/../include -I/home/x0221391/cardimage_copy/rootfs/usr/include -I/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv -I/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include -I/opt/ros/hydro/include -I/home/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk -I/home/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/include/link_api -I/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/linux/src/osa/include -I/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/linux/targetfs/usr/include -I/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/ti_components/os_tools/ipc_3_22_01_08/packages -I/home/x0221391/ws_arm/src/cam_streamer/include    -o CMakeFiles/cam_streamer.dir/src/cam_capture.cpp.o -c /home/x0221391/ws_arm/src/cam_streamer/src/cam_capture.cpp
+In file included from /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv2/flann/kmeans_index.h:50:0,
+                 from /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv2/flann/all_indices.h:38,
+                 from /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv2/flann/flann_base.hpp:44,
+                 from /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv2/flann/flann.hpp:50,
+                 from /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv/cv.h:69,
+                 from /home/x0221391/ws_arm/src/cam_streamer/src/cam_capture.cpp:12:
+/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv2/flann/logger.h:73:9: note: the mangling of ‘va_list’ has changed in GCC 4.4
+/home/x0221391/ws_arm/src/cam_streamer/src/cam_capture.cpp: In function ‘int frameStreamHandler(void*, int, FILE*, int, int)’:
+/home/x0221391/ws_arm/src/cam_streamer/src/cam_capture.cpp:56:30: error: no matching function for call to ‘image_transport::Publisher::publish(sensor_msgs::CompressedImage&)’
+/home/x0221391/ws_arm/src/cam_streamer/src/cam_capture.cpp:56:30: note: candidates are:
+/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/image_transport/publisher.h:84:8: note: void image_transport::Publisher::publish(const Image&) const
+/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/image_transport/publisher.h:84:8: note:   no known conversion for argument 1 from ‘sensor_msgs::CompressedImage’ to ‘const Image& {aka const sensor_msgs::Image_<std::allocator<void> >&}’
+/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/image_transport/publisher.h:89:8: note: void image_transport::Publisher::publish(const ImageConstPtr&) const
+/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/image_transport/publisher.h:89:8: note:   no known conversion for argument 1 from ‘sensor_msgs::CompressedImage’ to ‘const ImageConstPtr& {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >&}’
+make[2]: *** [CMakeFiles/cam_streamer.dir/src/cam_capture.cpp.o] Error 1
+make[2]: Leaving directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+make[1]: *** [CMakeFiles/cam_streamer.dir/all] Error 2
+make[1]: Leaving directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+make: *** [all] Error 2
+Base path: /home/x0221391/ws_arm
+Source space: /home/x0221391/ws_arm/src
+Build space: /home/x0221391/ws_arm/build_isolated
+Devel space: /home/x0221391/ws_arm/devel_isolated
+Install space: /user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro
+Additional CMake Arguments: -DCMAKE_TOOLCHAIN_FILE=/home/x0221391/ws_arm/rostoolchain_vision.cmake -DCMAKE_VERBOSE_MAKEFILE=true
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~  traversing 5 packages in topological order:
+~~  - avp_streamcam
+~~  - cam_capture
+~~  - cam_capture_old
+~~  - cam_sgxdisplay
+~~  - cam_streamer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Skipping package: 'avp_streamcam'
+Skipping package: 'cam_capture'
+Skipping package: 'cam_capture_old'
+Skipping package: 'cam_sgxdisplay'
+
+]2;cam_streamer [5 of 5]==> Processing catkin package: 'cam_streamer'
+==> Building with env: '/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/env.sh'
+Makefile exists, skipping explicit cmake invocation...
+==> make cmake_check_build_system in '/home/x0221391/ws_arm/build_isolated/cam_streamer'
+/usr/bin/cmake -H/home/x0221391/ws_arm/src/cam_streamer -B/home/x0221391/ws_arm/build_isolated/cam_streamer --check-build-system CMakeFiles/Makefile.cmake 0
+==> make -j4 -l4 in '/home/x0221391/ws_arm/build_isolated/cam_streamer'
+<== Failed to process package 'cam_streamer': 
+  Command '/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/env.sh make -j4 -l4' returned non-zero exit status 2
+
+Reproduce this error by running:
+==> cd /home/x0221391/ws_arm/build_isolated/cam_streamer && /user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/env.sh make -j4 -l4
+
+Command failed, exiting.

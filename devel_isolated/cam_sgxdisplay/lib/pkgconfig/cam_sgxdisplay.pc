@@ -1,0 +1,8 @@
+prefix=/home/x0221391/ws_arm/devel_isolated/cam_sgxdisplay
+
+Name: cam_sgxdisplay
+Description: Description of cam_sgxdisplay
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/x0221391/ws_arm/devel_isolated/cam_sgxdisplay/lib 
+Requires: 

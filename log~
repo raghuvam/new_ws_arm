@@ -1,0 +1,178 @@
+Base path: /home/x0221391/ws_arm
+Source space: /home/x0221391/ws_arm/src
+Build space: /home/x0221391/ws_arm/build_isolated
+Devel space: /home/x0221391/ws_arm/devel_isolated
+Install space: /user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro
+Additional CMake Arguments: -DCMAKE_TOOLCHAIN_FILE=/home/x0221391/ws_arm/rostoolchain_vision.cmake -DCMAKE_VERBOSE_MAKEFILE=true
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~  traversing 5 packages in topological order:
+~~  - avp_streamcam
+~~  - cam_capture
+~~  - cam_capture_old
+~~  - cam_sgxdisplay
+~~  - cam_streamer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Skipping package: 'avp_streamcam'
+Skipping package: 'cam_capture'
+Skipping package: 'cam_capture_old'
+Skipping package: 'cam_sgxdisplay'
+
+]2;cam_streamer [5 of 5]==> Processing catkin package: 'cam_streamer'
+==> Creating build directory: 'build_isolated/cam_streamer'
+==> Building with env: '/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/env.sh'
+==> cmake /home/x0221391/ws_arm/src/cam_streamer -DCATKIN_DEVEL_PREFIX=/home/x0221391/ws_arm/devel_isolated/cam_streamer -DCMAKE_INSTALL_PREFIX=/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro -DCMAKE_TOOLCHAIN_FILE=/home/x0221391/ws_arm/rostoolchain_vision.cmake -DCMAKE_VERBOSE_MAKEFILE=true in '/home/x0221391/ws_arm/build_isolated/cam_streamer'
+-- The C compiler identification is GNU 4.6.3
+-- The CXX compiler identification is GNU 4.6.3
+-- Check for working C compiler: /usr/bin/arm-linux-gnueabihf-gcc-4.6
+-- Check for working C compiler: /usr/bin/arm-linux-gnueabihf-gcc-4.6 -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/arm-linux-gnueabihf-g++-4.6
+-- Check for working CXX compiler: /usr/bin/arm-linux-gnueabihf-g++-4.6 -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Using CATKIN_DEVEL_PREFIX: /home/x0221391/ws_arm/devel_isolated/cam_streamer
+-- Using CMAKE_PREFIX_PATH: /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro
+-- This workspace overlays: /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro
+-- Found PythonInterp: /usr/bin/python (found version "2.7.3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/x0221391/ws_arm/build_isolated/cam_streamer/test_results
+-- Could NOT find PythonInterp (missing:  PYTHON_EXECUTABLE) (found version "2.7.3")
+-- Looking for include file pthread.h
+-- Looking for include file pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found.
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found gtest sources under '/usr/src/gtest': gtests will be built
+-- catkin 0.5.81
+STATUS:raghu : /home/x0221391/ws_arm/devel_isolated/cam_streamer
+STATUS:raghu : /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro
+STATUS:raghu : /home/x0221391/ws_arm/devel_isolated/cam_streamer
+STATUS:raghu : /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro
+STATUS:raghu : /home/x0221391/ws_arm/devel_isolated/cam_streamer
+STATUS:raghu : /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro
+STATUS:raghu : /home/x0221391/ws_arm/devel_isolated/cam_streamer
+STATUS:raghu : /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro
+STATUS:raghu : /home/x0221391/ws_arm/devel_isolated/cam_streamer
+STATUS:raghu : /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro
+-- Configuring done
+CMake Warning at CMakeLists.txt:73 (add_executable):
+  Cannot generate a safe linker search path for target cam_streamer because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    link library [libboost_filesystem-mt.so] in /usr/lib may be hidden by files in:
+      /user/x0221391/ubuntu_arm/rootfs/usr/lib
+      /home/x0221391/cardimage_copy/rootfs/usr/lib
+    link library [libboos/usr/bin/cmake -H/home/x0221391/ws_arm/src/cam_streamer -B/home/x0221391/ws_arm/build_isolated/cam_streamer --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/x0221391/ws_arm/build_isolated/cam_streamer/CMakeFiles /home/x0221391/ws_arm/build_isolated/cam_streamer/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+make -f CMakeFiles/streamerlink.dir/build.make CMakeFiles/streamerlink.dir/depend
+make[2]: Entering directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+cd /home/x0221391/ws_arm/build_isolated/cam_streamer && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/x0221391/ws_arm/src/cam_streamer /home/x0221391/ws_arm/src/cam_streamer /home/x0221391/ws_arm/build_isolated/cam_streamer /home/x0221391/ws_arm/build_isolated/cam_streamer /home/x0221391/ws_arm/build_isolated/cam_streamer/CMakeFiles/streamerlink.dir/DependInfo.cmake --color=
+Scanning dependencies of target streamerlink
+make[2]: Leaving directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+make -f CMakeFiles/streamerlink.dir/build.make CMakeFiles/streamerlink.dir/build
+make[2]: Entering directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+/usr/bin/cmake -E cmake_progress_report /home/x0221391/ws_arm/build_isolated/cam_streamer/CMakeFiles 5
+[ 50%] Building C object CMakeFiles/streamerlink.dir/src/EncNull.c.o
+/usr/bin/arm-linux-gnueabihf-gcc-4.6  -Dstreamerlink_EXPORTS -DROS_PACKAGE_NAME=\"cam_streamer\" -DROSCONSOLE_BACKEND_LOG4CXX -Wno-unused-variable -Wno-unused-parameter -DTDA2XX_BUILD -DTDA2XX_FAMILY_BUILD -DPLATFORM_EVM_SI -DTDA2XX_1024MB_DDR -DUTILS_ASSERT_ENABLE -DFVID2_BACKWARD_COMPATIBLE -DUSE_STD_ASSERT -DTRACE_ENABLE -DASSERT_ENABLE -D_DRA7xx -D_SC_VER_1_16 -D__sysbios__ -DPROC_IPU1_0_INCLUDE -DTDA2XX_BUILD -DTDA2XX_FAMILY_BUILD -DPLATFORM_EVM_SI -DTDA2XX_1024MB_DDR -DUTILS_ASSERT_ENABLE -DFVID2_BACKWARD_COMPATIBLE -DUSE_STD_ASSERT -DTRACE_ENABLE -DASSERT_ENABLE -D_DRA7xx -D_SC_VER_1_16 -D__sysbios__ -DPROC_IPU1_0_INCLUDE -DPROC_DSP1_INCLUDE -DPROC_DSP2_INCLUDE -DA15_TARGET_OS_LINUX -DLINUX_BUILD -DPROC_IPU1_0_INCLUDE -DPROC_DSP1_INCLUDE -DPROC_DSP2_INCLUDE -DPROC_A15_0_INCLUDE -DA15_TARGET_OS_LINUX -DLINUX_BUILD -DPROC_IPU1_0_INCLUDE -DPROC_A15_0_INCLUDE -Wall -Warray-bounds -O3 -fPIC -I/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/linux/src/osa/include -I/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include -I/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv -I/home/x0221391/cardimage_copy/rootfs/usr/share/../include -I/home/x0221391/cardimage_copy/rootfs/usr/include -I/home/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk -I/home/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/include/link_api -I/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/linux/src/osa/include -I/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/linux/targetfs/usr/include -I/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/ti_components/os_tools/ipc_3_22_01_08/packages -I/home/x0221391/ws_arm/src/cam_streamer/include    -o CMakeFiles/streamerlink.dir/src/EncNull.c.o   -c /home/x0221391/ws_arm/src/cam_streamer/src/EncNull.c
+/home/x0221391/ws_arm/src/cam_streamer/src/EncNull.c: In function ‘Chains_readChar’:
+/home/x0221391/ws_arm/src/cam_streamer/src/EncNull.c:133:10: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+Linking C shared library /home/x0221391/ws_arm/devel_isolated/cam_streamer/lib/libstreamerlink.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/streamerlink.dir/link.txt --verbose=1
+/usr/bin/arm-linux-gnueabihf-gcc-4.6  -fPIC  -Wno-unused-variable -Wno-unused-parameter -DTDA2XX_BUILD -DTDA2XX_FAMILY_BUILD -DPLATFORM_EVM_SI -DTDA2XX_1024MB_DDR -DUTILS_ASSERT_ENABLE -DFVID2_BACKWARD_COMPATIBLE -DUSE_STD_ASSERT -DTRACE_ENABLE -DASSERT_ENABLE -D_DRA7xx -D_SC_VER_1_16 -D__sysbios__ -DPROC_IPU1_0_INCLUDE -DTDA2XX_BUILD -DTDA2XX_FAMILY_BUILD -DPLATFORM_EVM_SI -DTDA2XX_1024MB_DDR -DUTILS_ASSERT_ENABLE -DFVID2_BACKWARD_COMPATIBLE -DUSE_STD_ASSERT -DTRACE_ENABLE -DASSERT_ENABLE -D_DRA7xx -D_SC_VER_1_16 -D__sysbios__ -DPROC_IPU1_0_INCLUDE -DPROC_DSP1_INCLUDE -DPROC_DSP2_INCLUDE -DA15_TARGET_OS_LINUX -DLINUX_BUILD -DPROC_IPU1_0_INCLUDE -DPROC_DSP1_INCLUDE -DPROC_DSP2_INCLUDE -DPROC_A15_0_INCLUDE -DA15_TARGET_OS_LINUX -DLINUX_BUILD -DPROC_IPU1_0_INCLUDE -DPROC_A15_0_INCLUDE -Wall -Warray-bounds -O3   -shared -Wl,-soname,libstreamerlink.so -o /home/x0221391/ws_arm/devel_isolated/cam_streamer/lib/libstreamerlink.so CMakeFiles/streamerlink.dir/src/EncNull.c.o -L/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/linux/targetfs/usr/lib -L/user/x0221391/cardimage_copy/rootfs/lib -L/user/x0221391/ubuntu_arm/rootfs/usr/lib -L/user/x0221391/cardimage_copy/rootfs/usr/lib/arm-linux-gnueabihf -L/user/x0221391/ubuntu_arm/rootfs/usr/lib/arm-linux-gnueabihf 
+make[2]: Leaving directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+/usr/bin/cmake -E cmake_progress_report /home/x0221391/ws_arm/build_isolated/cam_streamer/CMakeFiles  5
+[ 50%] Built target streamerlink
+make -f CMakeFiles/cam_streamer.dir/build.make CMakeFiles/cam_streamer.dir/depend
+make[2]: Entering directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+cd /home/x0221391/ws_arm/build_isolated/cam_streamer && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/x0221391/ws_arm/src/cam_streamer /home/x0221391/ws_arm/src/cam_streamer /home/x0221391/ws_arm/build_isolated/cam_streamer /home/x0221391/ws_arm/build_isolated/cam_streamer /home/x0221391/ws_arm/build_isolated/cam_streamer/CMakeFiles/cam_streamer.dir/DependInfo.cmake --color=
+Scanning dependencies of target cam_streamer
+make[2]: Leaving directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+make -f CMakeFiles/cam_streamer.dir/build.make CMakeFiles/cam_streamer.dir/build
+make[2]: Entering directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+/usr/bin/cmake -E cmake_progress_report /home/x0221391/ws_arm/build_isolated/cam_streamer/CMakeFiles 1
+[100%] Building CXX object CMakeFiles/cam_streamer.dir/src/cam_capture.cpp.o
+/usr/bin/arm-linux-gnueabihf-g++-4.6   -DROS_PACKAGE_NAME=\"cam_streamer\" -DROSCONSOLE_BACKEND_LOG4CXX -Wno-unused-variable -Wno-unused-parameter -DTDA2XX_BUILD -DTDA2XX_FAMILY_BUILD -DPLATFORM_EVM_SI -DTDA2XX_1024MB_DDR -DUTILS_ASSERT_ENABLE -DFVID2_BACKWARD_COMPATIBLE -DUSE_STD_ASSERT -DTRACE_ENABLE -DASSERT_ENABLE -D_DRA7xx -D_SC_VER_1_16 -D__sysbios__ -DPROC_IPU1_0_INCLUDE -DTDA2XX_BUILD -DTDA2XX_FAMILY_BUILD -DPLATFORM_EVM_SI -DTDA2XX_1024MB_DDR -DUTILS_ASSERT_ENABLE -DFVID2_BACKWARD_COMPATIBLE -DUSE_STD_ASSERT -DTRACE_ENABLE -DASSERT_ENABLE -D_DRA7xx -D_SC_VER_1_16 -D__sysbios__ -DPROC_IPU1_0_INCLUDE -DPROC_DSP1_INCLUDE -DPROC_DSP2_INCLUDE -DA15_TARGET_OS_LINUX -DLINUX_BUILD -DPROC_IPU1_0_INCLUDE -DPROC_DSP1_INCLUDE -DPROC_DSP2_INCLUDE -DPROC_A15_0_INCLUDE -DA15_TARGET_OS_LINUX -DLINUX_BUILD -DPROC_IPU1_0_INCLUDE -DPROC_A15_0_INCLUDE -Wall -Warray-bounds -O3 -I/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/linux/src/osa/include -I/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include -I/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv -I/home/x0221391/cardimage_copy/rootfs/usr/share/../include -I/home/x0221391/cardimage_copy/rootfs/usr/include -I/home/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk -I/home/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/include/link_api -I/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/linux/src/osa/include -I/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/linux/targetfs/usr/include -I/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/ti_components/os_tools/ipc_3_22_01_08/packages -I/home/x0221391/ws_arm/src/cam_streamer/include    -o CMakeFiles/cam_streamer.dir/src/cam_capture.cpp.o -c /home/x0221391/ws_arm/src/cam_streamer/src/cam_capture.cpp
+In file included from /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv2/flann/kmeans_index.h:50:0,
+                 from /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv2/flann/all_indices.h:38,
+                 from /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv2/flann/flann_base.hpp:44,
+                 from /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv2/flann/flann.hpp:50,
+                 from /home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv/cv.h:69,
+                 from /home/x0221391/ws_arm/src/cam_streamer/src/cam_capture.cpp:11:
+/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/include/opencv2/flann/logger.h:73:9: note: the mangling of ‘va_list’ has changed in GCC 4.4
+/home/x0221391/ws_arm/src/cam_streamer/src/cam_capture.cpp: In function ‘int frameStreamHandler(void*, int, FILE*, int, int)’:
+/home/x0221391/ws_arm/src/cam_streamer/src/cam_capture.cpp:43:41: error: expected unqualified-id before ‘(’ token
+make[2]: *** [CMakeFiles/cam_streamer.dir/src/cam_capture.cpp.o] Error 1
+make[2]: Leaving directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+make[1]: *** [CMakeFiles/cam_streamer.dir/all] Error 2
+make[1]: Leaving directory `/home/x0221391/ws_arm/build_isolated/cam_streamer'
+make: *** [all] Error 2
+t_system-mt.so] in /usr/lib may be hidden by files in:
+      /user/x0221391/ubuntu_arm/rootfs/usr/lib
+      /home/x0221391/cardimage_copy/rootfs/usr/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at CMakeLists.txt:73 (add_executable):
+  Cannot generate a safe runtime search path for target cam_streamer because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libboost_filesystem.so.1.46.1] in /usr/lib may be hidden by files in:
+      /user/x0221391/ubuntu_arm/rootfs/usr/lib
+      /home/x0221391/cardimage_copy/rootfs/usr/lib
+      /home/x0221391/cardimage_copy/rootfs/usr/share/../lib
+    runtime library [libboost_system.so.1.46.1] in /usr/lib may be hidden by files in:
+      /user/x0221391/ubuntu_arm/rootfs/usr/lib
+      /home/x0221391/cardimage_copy/rootfs/usr/lib
+      /home/x0221391/cardimage_copy/rootfs/usr/share/../lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at CMakeLists.txt:73 (add_executable):
+  Cannot generate a safe runtime search path for target cam_streamer because
+  there is a cycle in the constraint graph:
+
+    dir 0 is [/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/linux/targetfs/usr/lib]
+      dir 7 must precede it due to runtime library [libpthread.so]
+    dir 1 is [/user/x0221391/cardimage_copy/rootfs/lib]
+      dir 7 must precede it due to runtime library [libpthread.so]
+    dir 2 is [/user/x0221391/ubuntu_arm/rootfs/usr/lib]
+      dir 7 must precede it due to runtime library [libtinyxml.so.2.6.2]
+      dir 8 must precede it due to runtime library [libboost_signals.so.1.46.1]
+    dir 3 is [/user/x0221391/cardimage_copy/rootfs/usr/lib/arm-linux-gnueabihf]
+      dir 7 must precede it due to runtime library [libpthread.so]
+    dir 4 is [/user/x0221391/ubuntu_arm/rootfs/usr/lib/arm-linux-gnueabihf]
+      dir 7 must precede it due to runtime library [libpthread.so]
+    dir 5 is [/home/x0221391/ws_arm/devel_isolated/cam_streamer/lib]
+    dir 6 is [/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/lib]
+    dir 7 is [/home/x0221391/cardimage_copy/rootfs/usr/lib]
+      dir 8 must precede it due to runtime library [libboost_signals.so.1.46.1]
+    dir 8 is [/home/x0221391/cardimage_copy/rootfs/usr/share/../lib]
+      dir 7 must precede it due to runtime library [libboost_thread.so.1.46.1]
+
+  Some of these libraries may not be found correctly.
+
+
+-- Generating done
+-- Build files have been written to: /home/x0221391/ws_arm/build_isolated/cam_streamer
+==> make -j4 -l4 in '/home/x0221391/ws_arm/build_isolated/cam_streamer'
+<== Failed to process package 'cam_streamer': 
+  Command '/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/env.sh make -j4 -l4' returned non-zero exit status 2
+
+Reproduce this error by running:
+==> cd /home/x0221391/ws_arm/build_isolated/cam_streamer && /user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/env.sh make -j4 -l4
+
+Command failed, exiting.

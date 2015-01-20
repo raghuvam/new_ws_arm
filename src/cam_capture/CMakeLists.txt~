@@ -1,0 +1,70 @@
+# Declare the version of the CMake API for forward-compatibility
+cmake_minimum_required(VERSION 2.8)
+
+# Declare the name of the CMake Project
+project(cam_capture)
+
+
+# Find Catkin
+find_package(catkin REQUIRED COMPONENTS roscpp std_msgs sensor_msgs)
+
+# Declare this project as a catkin package
+catkin_package()
+
+#MESSAGE(STATUS "raghu: " ${roscpp_LIBRARIES})
+
+
+
+
+##########
+set(LIBRARY_PATH -L/user/x0221391/cardimage_copy/rootfs/usr/lib -L/user/x0221391/cardimage_copy/rootfs/opt/ros/hydro/lib)
+set(vision_sdk_PATH /user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00)
+include_directories(${vision_sdk_PATH}/linux/src/osa/include)
+
+###########
+
+
+###
+
+set(OBJS_DIR /user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/binaries/obj/vision_sdk_examples/tda2xx-evm/a15/debug)
+
+set (OBJS ${OBJS_DIR}/vision_sdk_linux_lib/system_linkApi.o ${OBJS_DIR}/vision_sdk_linux_lib/osa.o ${OBJS_DIR}/vision_sdk_linux_demo/chains_common.o ${OBJS_DIR}/vision_sdk_linux_lib/system_rpmsg.o ${OBJS_DIR}/vision_sdk_linux_lib/system_rpmsg_msgq.o ${OBJS_DIR}/vision_sdk_linux_lib/system_linkApi_local.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_mem.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_global_time.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_ipc_que.o ${OBJS_DIR}/vision_sdk_linux_lib/ipcInLink_drv.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_mbx.o ${OBJS_DIR}/vision_sdk_linux_lib/ipcInLink_tsk.o ${OBJS_DIR}/vision_sdk_linux_lib/ipcOutLink_drv.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_msgq.o ${OBJS_DIR}/vision_sdk_linux_lib/ipcOutLink_tsk.o ${OBJS_DIR}/vision_sdk_linux_lib/MultiProcCfg_dra7xx.o ${OBJS_DIR}/vision_sdk_linux_lib/MultiProc.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_prf.o ${OBJS_DIR}/vision_sdk_linux_lib/nullLink_tsk.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_que.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_buf.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_remote_log_client.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_cache.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_remote_log_server.o ${OBJS_DIR}/vision_sdk_linux_lib/system_rpmsg_notify.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_dma.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_thr.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_file.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_tsk.o ${OBJS_DIR}/vision_sdk_linux_lib/osa_mutex.o ${OBJS_DIR}/vision_sdk_linux_lib/system_common.o ${OBJS_DIR}/vision_sdk_linux_lib/sgxDisplayLink_drv.o ${OBJS_DIR}/vision_sdk_linux_lib/sgxDisplayLink_tsk.o ${OBJS_DIR}/vision_sdk_linux_lib/system_drm_egl.o ${OBJS_DIR}/vision_sdk_linux_lib/sgxRender1x1.o ${OBJS_DIR}/vision_sdk_linux_lib/sgxRender2x2.o ${OBJS_DIR}/vision_sdk_linux_lib/sgxRenderKmsCube.o ${OBJS_DIR}/vision_sdk_linux_lib/esTransform.o)
+
+####
+
+
+######
+#COMPILER#
+######
+set(CMAKE_C_FLAGS " -Wno-unused-variable -Wno-unused-parameter -DTDA2XX_BUILD -DTDA2XX_FAMILY_BUILD -DPLATFORM_EVM_SI -DTDA2XX_1024MB_DDR -DUTILS_ASSERT_ENABLE -DFVID2_BACKWARD_COMPATIBLE -DUSE_STD_ASSERT -DTRACE_ENABLE -DASSERT_ENABLE -D_DRA7xx -D_SC_VER_1_16 -D__sysbios__ -DPROC_IPU1_0_INCLUDE -DTDA2XX_BUILD -DTDA2XX_FAMILY_BUILD -DPLATFORM_EVM_SI -DTDA2XX_1024MB_DDR -DUTILS_ASSERT_ENABLE -DFVID2_BACKWARD_COMPATIBLE -DUSE_STD_ASSERT -DTRACE_ENABLE -DASSERT_ENABLE -D_DRA7xx -D_SC_VER_1_16 -D__sysbios__ -DPROC_IPU1_0_INCLUDE -DPROC_DSP1_INCLUDE -DPROC_DSP2_INCLUDE -DA15_TARGET_OS_LINUX -DLINUX_BUILD -DPROC_IPU1_0_INCLUDE -DPROC_DSP1_INCLUDE -DPROC_DSP2_INCLUDE -DPROC_A15_0_INCLUDE -DA15_TARGET_OS_LINUX -DLINUX_BUILD -DPROC_IPU1_0_INCLUDE -DPROC_A15_0_INCLUDE -Wall -Warray-bounds -O3")
+set(CMAKE_CXX_FLAGS "-Wno-unused-variable -Wno-unused-parameter -DTDA2XX_BUILD -DTDA2XX_FAMILY_BUILD -DPLATFORM_EVM_SI -DTDA2XX_1024MB_DDR -DUTILS_ASSERT_ENABLE -DFVID2_BACKWARD_COMPATIBLE -DUSE_STD_ASSERT -DTRACE_ENABLE -DASSERT_ENABLE -D_DRA7xx -D_SC_VER_1_16 -D__sysbios__ -DPROC_IPU1_0_INCLUDE -DTDA2XX_BUILD -DTDA2XX_FAMILY_BUILD -DPLATFORM_EVM_SI -DTDA2XX_1024MB_DDR -DUTILS_ASSERT_ENABLE -DFVID2_BACKWARD_COMPATIBLE -DUSE_STD_ASSERT -DTRACE_ENABLE -DASSERT_ENABLE -D_DRA7xx -D_SC_VER_1_16 -D__sysbios__ -DPROC_IPU1_0_INCLUDE -DPROC_DSP1_INCLUDE -DPROC_DSP2_INCLUDE -DA15_TARGET_OS_LINUX -DLINUX_BUILD -DPROC_IPU1_0_INCLUDE -DPROC_DSP1_INCLUDE -DPROC_DSP2_INCLUDE -DPROC_A15_0_INCLUDE -DA15_TARGET_OS_LINUX -DLINUX_BUILD -DPROC_IPU1_0_INCLUDE -DPROC_A15_0_INCLUDE -Wall -Warray-bounds -O3")
+#######
+#######/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/linux/targetfs/usr/include ${vision_sdk_PATH}/ti_components/os_tools/ipc_3_22_01_08/packages/
+
+
+set(visionSDK_INCLUDE_DIRS /home/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/ /home/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/include/link_api/ /user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/linux/src/osa/include/)
+
+# Add the headers from roscpp
+include_directories(${catkin_INCLUDE_DIRS})
+include_directories(${visionSDK_INCLUDE_DIRS})
+include_directories(include)
+
+##vision_SDK libraries /user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/binaries/lib/a15/debug/vision_sdk_linux_demo.a
+
+set(visionSDK_LIBRARIES /user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/binaries/lib/a15/debug/vision_sdk_linux_demo.a /user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/binaries/lib/a15/debug/vision_sdk_linux_lib.a)
+set(visionSDK_COMMON_LIBS  -L/user/x0221391/Documents/VISION_SDK_02_03_00_00/vision_sdk/linux/targetfs/usr/lib -ldrm -ldrm_omap -lgbm -lEGL -lIMGegl -lpvr2d -lsrv_um -lGLESv2 -lwayland-server -lffi -ludev -lpthread -lm)
+
+#link_directories(${LIBRARY_PATH})
+link_directories(/user/x0221391/Documents/vision_sdk_live/VISION_SDK_02_03_00_00/vision_sdk/linux/targetfs/usr/lib)
+
+add_library(Enc_Null src/EncNull.c)
+
+add_executable(cam_capture src/cam_capture.cpp)
+
+
+# Define an execuable target (ld-linux-armhf.so.3 libapr-1.so libaprutil-1.so ld-linux.so.3) -L${LIBRARY_PATH} -lroscpp -lboost_signals-mt -lboost_filesystem-mt -lrosconsole -lrosconsole_log4cxx -lrosconsole_backend_interface -llog4cxx -lboost_regex-mt  -lroscpp_serialization -lrostime -lboost_date_time-mt -lboost_system-mt -lboost_thread-mt -lxmlrpcpp -lcpp_common -lconsole_bridge  -L/user/x0221391/cardimage_copy/rootfs/opt/ros/hydro/lib -lconsole_bridge 
+ 
+#target_link_libraries(Enc_Null  ${visionSDK_LIBRARIES} ${visionSDK_COMMON_LIBS} -L/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/lib -lconsole_bridge -lapr-1 -laprutil-1 -licuuc -licui18n -luuid -licudata -lexpat) 
+
+target_link_libraries(cam_capture Enc_Null ${visionSDK_LIBRARIES} ${visionSDK_COMMON_LIBS} ${catkin_LIBRARIES} -L/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/lib -lconsole_bridge -lapr-1 -laprutil-1 -licuuc -licui18n -luuid -licudata -lexpat)
+

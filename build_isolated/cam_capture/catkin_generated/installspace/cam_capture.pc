@@ -1,0 +1,8 @@
+prefix=/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro
+
+Name: cam_capture
+Description: Description of cam_capture
+Version: 0.0.0
+Cflags: 
+Libs: -L/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/lib 
+Requires: 

@@ -1,0 +1,13 @@
+/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/.catkin
+/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/_setup_util.py
+/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/env.sh
+/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/setup.bash
+/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/setup.sh
+/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/setup.zsh
+/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/.rosinstall
+/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/etc/catkin/profile.d/05.catkin_make.bash
+/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/etc/catkin/profile.d/05.catkin_make_isolated.bash
+/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/lib/pkgconfig/avp_streamcam.pc
+/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/share/avp_streamcam/cmake/avp_streamcamConfig.cmake
+/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/share/avp_streamcam/cmake/avp_streamcamConfig-version.cmake
+/user/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/share/avp_streamcam/package.xml

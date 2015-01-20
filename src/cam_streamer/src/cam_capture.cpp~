@@ -1,0 +1,85 @@
+// Include the ROS C++ APIs
+#include <ros/ros.h>
+#include <ros/time.h>
+#include <nodelet/loader.h>
+#include "sensor_msgs/Image.h"
+#include "sensor_msgs/CompressedImage.h"
+#include "sensor_msgs/image_encodings.h"
+#include "sensor_msgs/CameraInfo.h"
+#include "camera_info_manager/camera_info_manager.h"
+#include "image_transport/image_transport.h"
+#include "compressed_image_transport/compression_common.h"
+#include <opencv/cv.h>
+#include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <cv_bridge/cv_bridge.h>
+
+using namespace cv;
+using namespace sensor_msgs;
+
+// parameters for image transport
+int i=0;
+char filename[30]="images/test";
+FILE *stream;
+unsigned int pair_id = 0;
+image_transport::Publisher cam_pub_0_;
+int length;
+
+
+extern "C"
+{
+#include "main.h"
+
+int frameStreamHandler(void *bufAddr,int fillLength,FILE *fpDataStream,int width,int height)
+{
+
+/*
+
+cv::Mat imageNew(1,fillLength,CV_8U);
+length = (int)fillLength;
+memcpy(imageNew.data,bufAddr,length);
+
+cv::Mat image = cv::imdecode(imageNew,CV_LOAD_IMAGE_COLOR);
+
+ImagePtr msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", image).toImageMsg();
+
+ROS_INFO_STREAM("debug: image published");
+cam_pub_0_.publish(msg);
+*/
+
+sensor_msgs::CompressedImage imgEncoded;
+imgEncoded.header = std_msgs::Header();
+imgEncoded.format = "jpeg";
+memcpy(&imgEncoded.data[0],bufAddr,fillLength);
+ROS_INFO_STREAM("debug: image published");
+cam_pub_0_.publish(imgEncoded);
+
+return 0;
+}
+
+}
+
+int main(int argc, char** argv) {
+
+  ros::init(argc, argv, "cam_streamer");
+ 
+ros::NodeHandle nh;
+
+cam_pub_0_ = nh.advertise("image/compressed", 1);
+  ros::start();
+
+  ROS_INFO_STREAM("Hello, This is cam_streamer");
+
+
+/////////// VISION_SDK_CODE ////////////
+
+VisionSDK_main();
+
+////////////////////////////////////////
+
+  ros::spin();
+  ros::shutdown();
+
+  return 0;
+}

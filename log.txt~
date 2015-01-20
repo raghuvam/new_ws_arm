@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/lib/python2.7/dist-packages/catkin/builder.py", line 832, in build_workspace_isolated
+    number=index + 1, of=len(ordered_packages)
+  File "/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/lib/python2.7/dist-packages/catkin/builder.py", line 585, in build_package
+    destdir=destdir
+  File "/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/lib/python2.7/dist-packages/catkin/builder.py", line 350, in build_catkin_package
+    run_command_colorized(cmake_cmd, build_dir, quiet, add_env=add_env)
+  File "/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/lib/python2.7/dist-packages/catkin/builder.py", line 170, in run_command_colorized
+    run_command(cmd, cwd, quiet=quiet, colorize=True, add_env=add_env)
+  File "/home/x0221391/cardimage_copy/rootfs/usr/share/ros/hydro/lib/python2.7/dist-packages/catkin/builder.py", line 188, in run_command
+    raise OSError("Failed command '%s': %s" % (cmd, e))
+OSError: Failed command '['/home/x0221391/ws_arm/devel_isolated/avp_streamcam/env.sh', 'cmake', '/home/x0221391/ws_arm/src/cam_capture', '-DCATKIN_DEVEL_PREFIX=/home/x0221391/ws_arm/devel_isolated/cam_capture', '-DCMAKE_INSTALL_PREFIX=/home/x0221391/ws_arm/install_isolated', '-DCMAKE_TOOLCHAIN_FILE=/home/x0221391/ws_arm/rostoolchain.cmake', '-DCMAKE_VERBOSE_MAKEFILE=true', '-DCMAKE_BUILD_TYPE=Debug']': [Errno 2] No such file or directory
+Base path: /home/x0221391/ws_arm
+Source space: /home/x0221391/ws_arm/src
+Build space: /home/x0221391/ws_arm/build_isolated
+Devel space: /home/x0221391/ws_arm/devel_isolated
+Install space: /home/x0221391/ws_arm/install_isolated
+Additional CMake Arguments: -DCMAKE_TOOLCHAIN_FILE=/home/x0221391/ws_arm/rostoolchain.cmake -DCMAKE_VERBOSE_MAKEFILE=true -DCMAKE_BUILD_TYPE=Debug
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~  traversing 2 packages in topological order:
+~~  - avp_streamcam
+~~  - cam_capture
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The packages or cmake arguments have changed, forcing cmake invocation
+Skipping package: 'avp_streamcam'
+
+]2;cam_capture [2 of 2]==> Processing catkin package: 'cam_capture'
+==> Creating build directory: 'build_isolated/cam_capture'
+==> Building with env: '/home/x0221391/ws_arm/devel_isolated/avp_streamcam/env.sh'
+==> cmake /home/x0221391/ws_arm/src/cam_capture -DCATKIN_DEVEL_PREFIX=/home/x0221391/ws_arm/devel_isolated/cam_capture -DCMAKE_INSTALL_PREFIX=/home/x0221391/ws_arm/install_isolated -DCMAKE_TOOLCHAIN_FILE=/home/x0221391/ws_arm/rostoolchain.cmake -DCMAKE_VERBOSE_MAKEFILE=true -DCMAKE_BUILD_TYPE=Debug in '/home/x0221391/ws_arm/build_isolated/cam_capture'
+Unhandled exception of type 'OSError':
+<== Failed to process package 'cam_capture': 
+  Failed command '['/home/x0221391/ws_arm/devel_isolated/avp_streamcam/env.sh', 'cmake', '/home/x0221391/ws_arm/src/cam_capture', '-DCATKIN_DEVEL_PREFIX=/home/x0221391/ws_arm/devel_isolated/cam_capture', '-DCMAKE_INSTALL_PREFIX=/home/x0221391/ws_arm/install_isolated', '-DCMAKE_TOOLCHAIN_FILE=/home/x0221391/ws_arm/rostoolchain.cmake', '-DCMAKE_VERBOSE_MAKEFILE=true', '-DCMAKE_BUILD_TYPE=Debug']': [Errno 2] No such file or directory
+Command failed, exiting.
